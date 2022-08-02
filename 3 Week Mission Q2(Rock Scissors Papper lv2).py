@@ -103,6 +103,7 @@ while t <= times :
     # ----------------------------------------
     # wdd(draw, win_com, win_user) 해당부분을 함수로 변경하려면면 함수에 값을 다시 업데이트 하는 과정이 필요
     # draw, win_com, win_user = wdd(draw, win_com, win_user)
+    # https://pythonguides.com/python-pass-by-reference-or-value/
 
     print("유저 =", getResult(u))
     print("컴퓨터 =", getResult(c))
