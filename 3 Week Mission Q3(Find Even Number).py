@@ -1,4 +1,5 @@
 
+
 while True :
     try :
         n = int(input("첫 번째 숫자를 입력하세요:"))
@@ -28,11 +29,9 @@ middle_number = (n+m)/2
 def result(n, m) :
     for x in numbers :
         if x/2 == int(x/2) : # 짝수인지 확인
+            print(x, "짝수")
             if x == middle_number : # 중앙값인지 확인
-                if middle_number == int(middle_number): #중앙값이 짝수인지 확인
-                    print(x, "짝수",)
-                    print(x, "중앙값")
-            else :
-                print(x, "짝수")
+                print(x, "중앙값")
 
 result(n, m)
+
