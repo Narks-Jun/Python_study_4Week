@@ -41,7 +41,6 @@ def tf(x) :
 def count_prime_number() :
     count = 0
     for k in numbers :
-        tf(k)
         if tf(k) == True :
             # print(K)
             count = count + 1
