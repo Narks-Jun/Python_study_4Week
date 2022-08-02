@@ -1,4 +1,5 @@
 
+
 user = "가위 바위 보 게임에 오신걸 환영합니다."
 print(user)
 rsp = ["가위", "바위", "보"]
@@ -17,7 +18,7 @@ def how_many_games() :
     return h
 
 # 가위 바위 보의 입력 값을 정수 형태로 변환
-def getUserInput(a):
+def getUserInput():
     while True : # while을 통해 입력값이 제대로 될때까지 반복
         a = input("가위 바위 보:")
         if a not in rsp :
@@ -50,11 +51,11 @@ def game(u, c) :
 def getResult (b) :
     r = "결과"
     if b == 0:
-        r = "가위"
+        r = rsp[0]
     elif b == 1:
-        r = "바위"
+        r = rsp[1]
     elif b == 2:
-        r = "보"
+        r = rsp[2]
     else:
         print("Error2")
     return r
@@ -83,7 +84,7 @@ win_com = 0
 win_user = 0
 
 while t <= times :
-    u = getUserInput(user)
+    u = getUserInput()
     # print(u)
 
     import random
