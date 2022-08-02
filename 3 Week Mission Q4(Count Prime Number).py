@@ -1,4 +1,5 @@
 
+
 while True :
     try :
         n = int(input("첫 번째 숫자를 입력하세요:"))
@@ -24,25 +25,27 @@ natural_number = [w for w in range(2, m+1)]
 # print(natural_number)
 o = [] # 함수결과를 리스트에 추가하기 위해 전역변수 선언
 
+# x가 소수라면 True 값을 반환하는 함수
+def tf(x) :
+    for y in natural_number:
+        if x <= 1 :  # 1은 소수가 아님
+            return False
+        elif x > y:  # 나눗셈 결과가 정수라면 소수가 아님
+            z = x / y
+            if z == int(z):
+                return False
+        else:
+            return True
+
+# 소수의 갯수를 세는 함수
 def count_prime_number() :
-    find = "None"
     count = 0
-    for x in numbers :
-        for y in natural_number :
-            if x <= 1  : # 1은 소수가 아님
-                find = "False"
-                break
-            elif x > y : # 나눗셈 결과가 정수라면 소수가 아님
-                z = x / y
-                if z == int(z) :
-                    find = "False"
-                    break
-            else :
-                find = "true"
-        if find == "true" :
-            # print(x)
+    for k in numbers :
+        tf(k)
+        if tf(k) == True :
+            # print(K)
             count = count + 1
-            o.append(x) # x값을 o안에 추가함
+            o.append(k) # k값을 o안에 추가함
         else :
             pass
     # print(count)
@@ -59,6 +62,5 @@ def count_olist() :
         count_o = count_o + 1
     return count_o
 # print("소수개수", count_olist())
-
 # 더간단하게 가능
 # print(len(o))
