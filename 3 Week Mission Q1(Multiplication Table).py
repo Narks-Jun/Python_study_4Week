@@ -18,9 +18,6 @@ def multiplication_table() :
     y = 1
 
     while True :
-        if x == 1 :
-            print(x, "X", y, "=", x*y)
-            break
         if x * y > 50 :
             break
         else :
